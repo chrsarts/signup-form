@@ -35,60 +35,66 @@
             You <em>know</em> you want to.
           </p>
         </div>
-        <form action="">
+        <form id="form" action="/">
           <fieldset>
             <legend>Welcome!</legend>
             <ul>
               <li>
-                <label for="firstname">First Name</label>
-                <input
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  required
-                  pattern="[A-Za-z]{2,30}"
-                />
+                <div class="input-control">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="firstname" id="firstname" />
+                  <div class="error"></div>
+                </div>
               </li>
               <li>
-                <label for="lastname">Last Name</label>
-                <input
-                  type="text"
-                  name="lastname"
-                  id="lastname"
-                  required
-                  pattern="[A-Za-z]{2,30}"
-                />
+                <div class="input-control">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" name="lastname" id="lastname" />
+                  <div class="error"></div>
+                </div>
               </li>
               <li>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required />
+                <div class="input-control">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                  <div class="error"></div>
+                </div>
               </li>
               <li>
-                <label for="phonenum">Phone number</label>
-                <input type="tel" name="phonenum" id="phonenum" required />
+                <div class="input-control">
+                  <label for="phonenum">Phone number</label>
+                  <input
+                    type="text"
+                    name="phonenum"
+                    id="phonenum"
+                    minlength="10"
+                  />
+                  <div class="error"></div>
+                </div>
               </li>
               <li>
-                <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass" required />
+                <div class="input-control">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" />
+                  <div class="error"></div>
+                </div>
               </li>
               <li>
-                <label for="confirmpass">Confirm Password</label>
-                <input
-                  type="password"
-                  name="confirmpass"
-                  id="confirmpass"
-                  required
-                />
+                <div class="input-control">
+                  <label for="password2">Confirm Password</label>
+                  <input type="password" name="password2" id="password2" />
+                  <div class="error"></div>
+                </div>
               </li>
             </ul>
           </fieldset>
           <div class="footer">
             <button type="submit" id="submit">Sign up</button>
-            <span>Already part of the club? <a href="#">Log in</a> </span>
+            <span>Already part of the club? <a href=" ">Log in</a> </span>
           </div>
         </form>
       </div>
     </main>
-    <script src="" async defer></script>
+    <script src="main.js" async defer></script>
   </body>
 </html>

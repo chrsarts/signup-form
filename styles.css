@@ -52,8 +52,12 @@ main {
   text-align: center;
 }
 
-.header {
-  height: 30vh;
+.header p {
+  width: 900px;
+  padding: 100px 20px 50px 50px;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 1.3px;
 }
 
 .footer {
@@ -105,11 +109,12 @@ li input[type="tel"] {
   height: 30px;
   border-radius: 5px;
   border: 2px solid #cecece;
+  font-size: 1.1em;
 }
 
 #firstname,
 #email,
-#pass {
+#password {
   margin-right: 70px;
 }
 
@@ -144,10 +149,23 @@ input[type="password"]:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
 }
 
-input:invalid {
-  border-color: red;
-}
-
 button {
   cursor: pointer;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control .success input {
+  border-color: #4bb953;
+}
+.input-control .error input {
+  border-color: #ff3232;
+}
+
+.input-control .error {
+  font-size: 0.8em;
+  color: #ff3232;
 }
