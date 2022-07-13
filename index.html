@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="pic"></div>
+        <div class="logo">
+          <div class="logo-img"></div>
+          <div class="text">
+            <h1>Yotsubato&!</h1>
+            <h3><em>friendship club</em></h3>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started. <br />
+            <br />
+            You <em>know</em> you want to.
+          </p>
+        </div>
+        <form action="">
+          <fieldset>
+            <legend>Welcome!</legend>
+            <ul>
+              <li>
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  required
+                  pattern="[A-Za-z]{2,30}"
+                />
+              </li>
+              <li>
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  required
+                  pattern="[A-Za-z]{2,30}"
+                />
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </li>
+              <li>
+                <label for="phonenum">Phone number</label>
+                <input type="tel" name="phonenum" id="phonenum" required />
+              </li>
+              <li>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" required />
+              </li>
+              <li>
+                <label for="confirmpass">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirmpass"
+                  id="confirmpass"
+                  required
+                />
+              </li>
+            </ul>
+          </fieldset>
+          <div class="footer">
+            <button type="submit" id="submit">Sign up</button>
+            <span>Already part of the club? <a href="#">Log in</a> </span>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="" async defer></script>
+  </body>
+</html>

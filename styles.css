@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  display: flex;
+}
+
+.left {
+  position: relative;
+  display: flex;
+}
+
+.pic {
+  background-image: url(./yotsuba__49210.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 35vw;
+  height: 100vh;
+}
+
+.logo-img {
+  background-image: url(./clover.png);
+  background-size: cover;
+  width: 125px;
+  height: 125px;
+}
+
+.logo {
+  top: 10vh;
+  color: white;
+  padding: 10px;
+  width: 35vw;
+  background-color: rgba(0, 0, 0, 0.407);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.logo h1 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+
+.logo h3 {
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+.header {
+  height: 30vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.footer button[type="submit"],
+.footer span {
+  margin: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: green;
+  font-weight: 700;
+}
+
+.content {
+  background-color: #fffcdb;
+  width: 65vw;
+}
+
+fieldset {
+  position: relative;
+  background-color: #fffeef;
+  padding: 70px 50px 40px 40px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+li {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+li input[type="text"],
+li input[type="email"],
+li input[type="password"],
+li input[type="tel"] {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #cecece;
+}
+
+#firstname,
+#email,
+#pass {
+  margin-right: 70px;
+}
+
+legend {
+  font-weight: bold;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
+fieldset {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button[type="submit"] {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4bb953;
+  color: rgb(255, 204, 0);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #4bb953;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+button {
+  cursor: pointer;
+}
